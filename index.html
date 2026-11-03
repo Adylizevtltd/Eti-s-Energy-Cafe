@@ -8,19 +8,12 @@
 <meta property="og:title" content="Eti's Energy Cafe | Personalized Weight Loss &amp; Wellness Coaching in Barrackpore">
 <meta property="og:description" content="Personalized weight loss, nutrition, fitness and wellness coaching in Barrackpore, West Bengal. Chat with Eti on WhatsApp.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/coach-hero.jpg">
+<meta property="og:image" content="assets/coach-portrait.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
 <style>
-/* ============ DESIGN PLAN ============
-   Layout: alternating cream / deep-green / white bands, generous vertical rhythm,
-   rounded "leaf-corner" cards, a pill-shaped WhatsApp CTA repeated as the one
-   consistent action, floating WhatsApp button + sticky mobile CTA bar.
-   Color: cream ground, forest-green ink, lime accent for energy, marigold for warmth.
-   Type: Poppins throughout, varying weight for hierarchy.
-*/
 :root{
   --cream:#FFFDF4;
   --surface:#FFFFFF;
@@ -28,7 +21,6 @@
   --green-900:#0B2A18;
   --green-800:#0E3B22;
   --green-700:#14532D;
-  --green-600:#1C6B3A;
   --green-deep:#064E3B;
   --lime:#65A30D;
   --lime-soft:#E3EFC7;
@@ -37,382 +29,313 @@
   --ink:#122417;
   --ink-soft:#43604C;
   --line:rgba(6,78,59,.14);
-  --shadow:0 20px 44px -24px rgba(8,45,27,.35);
-  --radius-lg:28px;
-  --radius-md:18px;
-  --font-display:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;
-  --font-body:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --shadow:0 16px 36px -20px rgba(8,45,27,.3);
+  --radius-lg:22px;
+  --radius-md:16px;
+  --font:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;
   color-scheme:light;
 }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
-body{
-  background:var(--cream);
-  color:var(--ink);
-  font-family:var(--font-body);
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
-}
+body{background:var(--cream);color:var(--ink);font-family:var(--font);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
 img{max-width:100%;display:block;}
 a{color:inherit;}
-h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.1;margin:0;color:var(--ink);}
+h1,h2,h3{font-family:var(--font);font-weight:700;line-height:1.15;margin:0;color:var(--ink);}
 p{margin:0;}
-.container{
-  max-width:1120px;
-  margin:0 auto;
-  padding-left:max(16px, env(safe-area-inset-left, 0px));
-  padding-right:max(16px, env(safe-area-inset-right, 0px));
-}
-.section{padding-block:clamp(52px,9vw,96px);}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--green-700);
-}
-.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--lime);}
-.h2{font-size:clamp(28px,4vw,42px);}
-.h3{font-size:clamp(20px,2.6vw,26px);}
-.lede{font-size:17px;color:var(--ink-soft);max-width:640px;}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  padding:16px 28px;border-radius:999px;font-weight:700;font-size:15px;
-  text-decoration:none;border:1px solid transparent;cursor:pointer;
-  transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
-  white-space:nowrap;
-}
+.container{max-width:880px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));}
+.section{padding-block:clamp(40px,7vw,68px);}
+.center{text-align:center;max-width:620px;margin:0 auto;}
+.eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-700);}
+.eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--lime);}
+.h2{font-size:clamp(25px,3.6vw,34px);}
+.lede{font-size:15.5px;color:var(--ink-soft);}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:14.5px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;white-space:nowrap;}
 .btn:active{transform:scale(.97);}
-.btn-primary{background:var(--green-700);color:#FFFDF4;box-shadow:0 14px 30px -12px rgba(20,83,45,.55);}
+.btn-primary{background:var(--green-700);color:#FFFDF4;box-shadow:0 12px 26px -12px rgba(20,83,45,.55);}
 .btn-primary:hover{background:var(--green-800);}
-.btn-gold{background:var(--gold);color:var(--green-900);box-shadow:0 14px 30px -12px rgba(244,196,48,.5);}
-.btn-gold:hover{filter:brightness(1.04);}
-.btn-outline{background:transparent;color:var(--surface);border-color:rgba(255,253,244,.45);}
-.btn-outline:hover{background:rgba(255,253,244,.1);}
+.btn-gold{background:var(--gold);color:var(--green-900);box-shadow:0 12px 26px -12px rgba(244,196,48,.5);}
 .btn-ghost{background:var(--surface);color:var(--green-700);border-color:var(--line);}
-.btn-ghost:hover{background:var(--surface-2);}
-.btn svg{width:18px;height:18px;flex:none;}
-.btn-sm{padding:12px 20px;font-size:13.5px;}
-.pillnote{
-  display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;
-  background:var(--lime-soft);color:var(--green-800);font-size:13px;font-weight:700;
-}
-.wa-number{font-weight:800;letter-spacing:.02em;}
-.grid{display:grid;gap:20px;}
-.cards-4{grid-template-columns:repeat(4,1fr);}
-.cards-3{grid-template-columns:repeat(3,1fr);}
-.cards-2{grid-template-columns:repeat(2,1fr);}
-@media (max-width:920px){
-  .cards-4{grid-template-columns:repeat(2,1fr);}
-  .cards-3{grid-template-columns:repeat(2,1fr);}
-}
-@media (max-width:620px){
-  .cards-4,.cards-3,.cards-2{grid-template-columns:1fr;}
-}
-.card{
-  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-md);
-  padding:26px;min-width:0;
-}
-.icon-chip{
-  width:46px;height:46px;border-radius:14px;background:var(--lime-soft);
-  display:flex;align-items:center;justify-content:center;margin-bottom:16px;flex:none;
-}
-.icon-chip svg{width:24px;height:24px;stroke:var(--green-700);}
-.section-dark{background:linear-gradient(180deg,var(--green-800),var(--green-900));color:#F4F1E0;}
-.section-dark h2,.section-dark h3{color:#FFFDF4;}
-.section-dark .lede{color:rgba(244,241,224,.82);}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:16px;}
-.brand .mark{
-  width:34px;height:34px;border-radius:10px;background:var(--green-700);
-  display:flex;align-items:center;justify-content:center;color:var(--gold);flex:none;
-}
-.brand .mark svg{width:19px;height:19px;}
-
-/* MARQUEE (infinite-loop carousels) */
-.marquee{overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);}
-.marquee-track{display:flex;width:max-content;animation:marquee-scroll 36s linear infinite;}
-.marquee:hover .marquee-track{animation-play-state:paused;}
-@keyframes marquee-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-@media (prefers-reduced-motion: reduce){
-  .marquee-track{animation:none;overflow-x:auto;-webkit-overflow-scrolling:touch;}
-  .marquee{-webkit-mask-image:none;mask-image:none;}
-}
+.btn svg{width:17px;height:17px;flex:none;}
+.btn-sm{padding:11px 18px;font-size:13px;}
+.wa-number{font-weight:800;}
+.topbar{background:var(--green-900);color:#F4F1E0;font-size:12.5px;font-weight:600;text-align:center;padding:9px max(16px, env(safe-area-inset-left, 0px));}
+.topbar span{opacity:.85;}
 
 /* HERO */
-.hero{position:relative;overflow:hidden;background:
-  radial-gradient(900px 480px at 85% -10%, var(--lime-soft), transparent 60%),
-  radial-gradient(700px 420px at -10% 10%, var(--gold-soft), transparent 55%),
-  var(--cream);
-}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-block:clamp(40px,7vw,76px);}
-@media (max-width:920px){.hero-grid{grid-template-columns:1fr;}}
-.hero h1{font-size:clamp(34px,5.2vw,58px);}
+.hero{background:radial-gradient(800px 420px at 50% -20%, var(--lime-soft), transparent 60%), var(--cream);padding-block:clamp(44px,8vw,78px) clamp(30px,5vw,48px);}
+.hero h1{font-size:clamp(30px,5vw,46px);}
 .hero h1 em{font-style:normal;color:var(--green-700);}
-.hero .lede{margin-top:18px;font-size:18px;}
-.hero-sub{margin-top:10px;font-size:15px;color:var(--ink-soft);max-width:560px;}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px;}
-.hero-trust{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:13.5px;color:var(--ink-soft);}
-.hero-highlights{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;}
-.hl-item{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);padding:10px 16px;border-radius:999px;font-size:13px;font-weight:700;color:var(--green-800);}
-.hl-item svg{width:16px;height:16px;stroke:var(--lime);}
-.hero-visual{
-  position:relative;aspect-ratio:4/5;border-radius:32px;overflow:hidden;
-  background:linear-gradient(160deg,var(--green-700),var(--green-deep));
-  display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);
-}
+.hero .lede{font-size:16.5px;margin:16px auto 0;max-width:560px;}
+.hero-ctas{display:flex;justify-content:center;margin-top:24px;}
+.trust-row{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:18px;font-size:13px;color:var(--ink-soft);font-weight:600;}
+.trust-row span{display:inline-flex;align-items:center;gap:6px;}
+.trust-row svg{width:15px;height:15px;stroke:var(--lime);}
 
-/* PROBLEM */
-.problem-card .icon-chip{background:var(--gold-soft);}
-.problem-card .icon-chip svg{stroke:var(--green-800);}
+/* ICON ROWS */
+.icon-rows{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;margin-top:30px;}
+@media (max-width:620px){.icon-rows{grid-template-columns:1fr;}}
+.icon-row{display:flex;gap:14px;align-items:flex-start;}
+.icon-row .ico{width:38px;height:38px;border-radius:11px;background:var(--lime-soft);display:flex;align-items:center;justify-content:center;flex:none;}
+.icon-row .ico svg{width:19px;height:19px;stroke:var(--green-700);}
+.icon-row b{font-size:14.5px;display:block;}
+.icon-row p{font-size:13.5px;color:var(--ink-soft);margin-top:3px;}
 
-/* INTRO / COACH */
-.coach-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:center;}
-@media (max-width:920px){.coach-wrap{grid-template-columns:1fr;}}
-.coach-card{
-  background:linear-gradient(165deg,var(--green-700),var(--green-deep));
-  border-radius:var(--radius-lg);padding:34px;color:#F4F1E0;text-align:center;
-}
-.coach-avatar{
-  width:132px;height:132px;border-radius:50%;margin:0 auto 18px;background:var(--gold);
-  display:flex;align-items:center;justify-content:center;font-family:var(--font-display);
-  font-size:48px;color:var(--green-900);
-}
-.coach-card h3{color:#fff;}
-.coach-card .role{color:var(--gold);font-weight:700;font-size:13.5px;margin-top:6px;}
-.coach-card .loc{color:rgba(244,241,224,.75);font-size:13px;margin-top:4px;}
+/* CHECK GRID */
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px;}
+@media (max-width:620px){.check-grid{grid-template-columns:1fr;}}
+.check-item{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:13.5px;font-weight:600;}
+.check-item .x{width:24px;height:24px;border-radius:50%;background:var(--gold-soft);color:var(--green-800);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex:none;}
+
+/* TRUST LIST */
+.trust-list{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;margin-top:28px;}
+@media (max-width:620px){.trust-list{grid-template-columns:1fr;}}
+.trust-list .item{display:flex;gap:12px;align-items:flex-start;}
+.trust-list .check{width:22px;height:22px;border-radius:50%;background:var(--green-700);color:var(--gold);display:flex;align-items:center;justify-content:center;flex:none;font-size:12px;}
+.trust-list b{font-size:14px;display:block;}
+.trust-list p{font-size:13px;color:var(--ink-soft);margin-top:2px;}
+.highlight-strip{margin-top:26px;background:var(--green-700);color:#F4F1E0;text-align:center;padding:16px 20px;border-radius:16px;font-weight:700;font-size:14.5px;}
+
+/* COACH */
+.coach-wrap{display:flex;gap:22px;align-items:center;flex-wrap:wrap;}
+.coach-photo{width:84px;height:84px;border-radius:50%;overflow:hidden;flex:none;border:3px solid var(--gold);}
+.coach-photo img{width:100%;height:100%;object-fit:cover;object-position:center 18%;}
+.coach-meta b{font-size:16px;}
+.coach-meta .role{color:var(--green-700);font-weight:700;font-size:12.5px;margin-top:2px;}
+.coach-meta .loc{color:var(--ink-soft);font-size:12.5px;margin-top:1px;}
+.coach-bio{margin-top:18px;font-size:14.5px;color:var(--ink-soft);}
+.pill-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.pill-tag{background:var(--lime-soft);color:var(--green-800);font-size:12px;font-weight:700;padding:7px 13px;border-radius:999px;}
 
 /* PROGRAMS */
-.plan-card{
-  border:1px solid var(--line);border-radius:var(--radius-lg);padding:32px;background:var(--surface);
-  display:flex;flex-direction:column;gap:18px;position:relative;
-}
+.plan-card{border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px;background:var(--surface);display:flex;flex-direction:column;gap:14px;position:relative;}
 .plan-card.featured{border:2px solid var(--green-700);box-shadow:var(--shadow);}
-.plan-badge{position:absolute;top:-14px;left:28px;background:var(--gold);color:var(--green-900);
-  font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px;}
-.plan-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
-.plan-list li{display:flex;gap:10px;font-size:14.5px;color:var(--ink-soft);}
-.plan-list svg{width:18px;height:18px;flex:none;stroke:var(--lime);margin-top:2px;}
-.plan-desc{color:var(--ink-soft);font-size:14.5px;}
+.plan-badge{position:absolute;top:-12px;left:22px;background:var(--gold);color:var(--green-900);font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:5px 12px;border-radius:999px;}
+.plan-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.plan-list li{display:flex;gap:9px;font-size:13.5px;color:var(--ink-soft);}
+.plan-list svg{width:16px;height:16px;flex:none;stroke:var(--lime);margin-top:2px;}
+.plan-desc{color:var(--ink-soft);font-size:13.5px;}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+@media (max-width:700px){.grid-2{grid-template-columns:1fr;}}
 
 /* STEPS */
-.step-card{position:relative;padding-top:8px;}
-.step-num{
-  width:40px;height:40px;border-radius:12px;background:var(--green-700);color:var(--gold);
-  display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:19px;margin-bottom:16px;
-}
-.step-line{position:absolute;top:60px;left:40px;right:-20px;height:1px;background:var(--line);}
-@media (max-width:920px){.step-line{display:none;}}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px;}
+@media (max-width:760px){.steps{grid-template-columns:1fr 1fr;}}
+@media (max-width:460px){.steps{grid-template-columns:1fr;}}
+.step{text-align:center;}
+.step .num{width:34px;height:34px;border-radius:10px;background:var(--green-700);color:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;margin:0 auto 10px;}
+.step b{font-size:13.5px;display:block;}
+.step p{font-size:12.5px;color:var(--ink-soft);margin-top:4px;}
 
-/* DIFFERENT */
-.diff-card{text-align:left;}
-.diff-card .icon-chip{background:var(--green-700);}
-.diff-card .icon-chip svg{stroke:var(--gold);}
+/* STAT ROW */
+.stat-row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px;}
+.stat-pill{background:var(--surface);border:1px solid var(--line);padding:12px 18px;border-radius:999px;font-size:13px;font-weight:700;color:var(--green-800);}
 
 /* TESTIMONIALS */
-.tn-rail{gap:18px;padding-block:8px 4px;}
-.tn-card{
-  flex:0 0 min(320px,82vw);background:var(--surface);
-  border:1px dashed var(--line);border-radius:var(--radius-md);padding:24px;min-width:0;
-}
-.tn-stars{color:var(--gold);font-size:15px;letter-spacing:2px;margin-bottom:10px;}
-.tn-note{font-size:13.5px;color:var(--ink-soft);}
-.disclaimer{font-size:12.5px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:16px;margin-top:28px;}
+.tm-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px;}
+@media (max-width:700px){.tm-grid{grid-template-columns:1fr;}}
+.tm-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-md);padding:20px;}
+.tm-stars{color:var(--gold);font-size:13px;letter-spacing:1.5px;margin-bottom:8px;}
+.tm-quote{font-size:13.5px;color:var(--ink);}
+.tm-who{display:flex;align-items:center;gap:10px;margin-top:14px;}
+.tm-avatar{width:34px;height:34px;border-radius:50%;background:var(--green-700);color:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;flex:none;}
+.tm-who b{font-size:13px;display:block;}
+.tm-who span{font-size:11.5px;color:var(--ink-soft);}
 
-/* BENEFITS */
-.benefit-pill{
-  display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);
-  border-radius:16px;padding:18px 20px;
-}
-.benefit-pill svg{width:22px;height:22px;stroke:var(--lime);flex:none;}
-.benefit-pill span{font-size:14.5px;font-weight:600;}
+/* CONSULT */
+.consult-icons{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px;}
+@media (max-width:620px){.consult-icons{grid-template-columns:1fr;}}
+.consult-icon{text-align:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 12px;}
+.consult-icon .ico{width:38px;height:38px;border-radius:11px;background:var(--lime-soft);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;}
+.consult-icon .ico svg{width:19px;height:19px;stroke:var(--green-700);}
+.consult-icon b{font-size:13px;display:block;}
+.consult-list{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-direction:column;gap:9px;max-width:460px;margin-left:auto;margin-right:auto;}
+.consult-list li{display:flex;gap:9px;font-size:13.5px;color:var(--ink-soft);}
+.consult-list svg{width:16px;height:16px;flex:none;stroke:var(--lime);margin-top:2px;}
 
 /* FAQ */
 .faq-item{border-bottom:1px solid var(--line);}
-.faq-q{
-  width:100%;text-align:left;background:none;border:none;cursor:pointer;
-  display:flex;justify-content:space-between;align-items:center;gap:16px;
-  padding-block:20px;font-family:var(--font-body);font-weight:700;font-size:15.5px;color:var(--ink);
-}
-.faq-q .plus{flex:none;width:22px;height:22px;border-radius:50%;background:var(--lime-soft);color:var(--green-800);
-  display:flex;align-items:center;justify-content:center;font-size:16px;transition:transform .2s ease;}
+.faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;padding-block:17px;font-family:var(--font);font-weight:700;font-size:14.5px;color:var(--ink);}
+.faq-q .plus{flex:none;width:20px;height:20px;border-radius:50%;background:var(--lime-soft);color:var(--green-800);display:flex;align-items:center;justify-content:center;font-size:15px;transition:transform .2s ease;}
 .faq-item[open] .plus{transform:rotate(45deg);}
-.faq-a{padding-bottom:20px;color:var(--ink-soft);font-size:14.5px;max-width:680px;}
+.faq-a{padding-bottom:17px;color:var(--ink-soft);font-size:13.5px;max-width:640px;}
 .faq-q::-webkit-details-marker{display:none;}
 
 /* FINAL CTA */
-.final-cta{
-  background:radial-gradient(900px 420px at 15% 0%, rgba(244,196,48,.18), transparent 55%), linear-gradient(165deg,var(--green-700),var(--green-900));
-  border-radius:var(--radius-lg);padding:clamp(36px,6vw,64px);color:#FFFDF4;text-align:center;
-}
-.final-cta h2{color:#fff;}
-.final-cta .lede{color:rgba(244,241,224,.85);margin:16px auto 0;}
-.final-cta .wa-number{font-size:22px;}
+.final-cta{background:linear-gradient(165deg,var(--green-700),var(--green-900));border-radius:var(--radius-lg);padding:clamp(32px,6vw,52px);color:#FFFDF4;text-align:center;}
+.final-cta h2{color:#fff;font-size:clamp(23px,3.4vw,30px);}
+.final-cta .lede{color:rgba(244,241,224,.85);margin:12px auto 0;max-width:480px;}
+.final-cta .wa-number{font-size:19px;}
 
 /* FOOTER */
-footer{background:var(--green-900);color:rgba(244,241,224,.82);}
-.foot-disclaimer{border-top:1px solid rgba(244,241,224,.12);padding:22px 0 calc(110px + env(safe-area-inset-bottom,0px));font-size:12px;color:rgba(244,241,224,.55);}
-@media (min-width:860px){.foot-disclaimer{padding-bottom:22px;}}
+footer{background:var(--green-900);color:rgba(244,241,224,.7);text-align:center;padding:26px max(16px, env(safe-area-inset-left, 0px)) calc(110px + env(safe-area-inset-bottom,0px));font-size:12px;}
+footer a{color:var(--gold);font-weight:700;}
+@media (min-width:860px){footer{padding-bottom:26px;}}
 
 /* FLOATING + STICKY WHATSAPP */
-.wa-float{
-  position:fixed;right:max(18px, env(safe-area-inset-right,0px));bottom:calc(92px + env(safe-area-inset-bottom,0px));
-  z-index:45;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;
-  display:flex;align-items:center;justify-content:center;box-shadow:0 14px 28px -10px rgba(0,0,0,.4);
-  text-decoration:none;
-}
-.wa-float svg{width:28px;height:28px;}
-@media (min-width:860px){.wa-float{bottom:max(24px, env(safe-area-inset-bottom,0px));}}
-.wa-sticky{
-  position:fixed;left:0;right:0;bottom:0;z-index:44;
-  padding:10px max(16px, env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px));
-  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
-  border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;
-}
+.wa-float{position:fixed;right:max(18px, env(safe-area-inset-right,0px));bottom:calc(88px + env(safe-area-inset-bottom,0px));z-index:45;width:54px;height:54px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 24px -10px rgba(0,0,0,.4);text-decoration:none;}
+.wa-float svg{width:26px;height:26px;}
+@media (min-width:860px){.wa-float{bottom:max(22px, env(safe-area-inset-bottom,0px));}}
+.wa-sticky{position:fixed;left:0;right:0;bottom:0;z-index:44;padding:9px max(16px, env(safe-area-inset-right,0px)) calc(9px + env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px));background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;}
 .wa-sticky .info{flex:1;min-width:0;}
-.wa-sticky .info b{display:block;font-size:13.5px;}
-.wa-sticky .info span{font-size:12px;color:var(--ink-soft);}
+.wa-sticky .info b{display:block;font-size:13px;}
+.wa-sticky .info span{font-size:11.5px;color:var(--ink-soft);}
 @media (min-width:860px){.wa-sticky{display:none;}}
 </style>
 </head>
 <body>
+
+<div class="topbar"><span>🌿</span> Personalized Weight Loss &amp; Wellness Coaching <span>·</span> Barrackpore, West Bengal</div>
+
 <main>
 <!-- HERO -->
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow"><span class="dot"></span> Personalized Weight Loss &amp; Wellness Coaching</span>
-      <h1>Your Weight Loss Journey Starts With <em>the Right Guidance</em></h1>
-      <p class="lede">Get personalized nutrition guidance, fitness support, and lifestyle coaching designed around your goals, routine, and individual needs.</p>
-      <p class="hero-sub">You don't need extreme dieting or complicated routines to start improving your lifestyle. Take the first step toward building healthier habits with Eti's Energy Cafe.</p>
-      <div class="hero-ctas">
-        <a href="#programs" class="btn btn-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          Start Your Weight Loss Journey
-        </a>
-        <a id="heroWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-ghost">
-          <svg viewBox="0 0 24 24" fill="#25D366"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.43 9.9-9.9 0-2.64-1.03-5.12-2.9-6.99A9.82 9.82 0 0 0 12.04 2zm5.8 14.07c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.8-.11-.42-.14-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.26-.28.57-.36.76-.36h.55c.18 0 .41-.07.64.49.24.56.8 1.95.87 2.09.07.14.12.3.02.5-.1.2-.15.32-.3.49-.14.17-.3.38-.43.5-.14.14-.29.3-.12.59.17.28.75 1.24 1.62 2.01 1.11 1 2.05 1.3 2.34 1.45.28.14.45.12.62-.07.17-.2.73-.85.92-1.14.2-.28.4-.24.66-.14.28.1 1.76.83 2.06.98.3.14.5.21.57.33.07.12.07.68-.17 1.36z"/></svg>
-          Chat With Eti on WhatsApp
-        </a>
-      </div>
-      <p class="hero-trust">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
-        WhatsApp <span class="wa-number">7278366751</span> · Barrackpore, West Bengal
-      </p>
-      <div class="hero-highlights">
-        <span class="hl-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Personalized Guidance</span>
-        <span class="hl-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Nutrition &amp; Fitness</span>
-        <span class="hl-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>Lifestyle Support</span>
-      </div>
+<section class="hero">
+  <div class="container center">
+    <span class="eyebrow"><span class="dot"></span> Eti's Energy Cafe</span>
+    <h1 style="margin-top:14px;">Your <em>Weight Loss</em> Journey Starts With the Right Guidance</h1>
+    <p class="lede">Personalized nutrition, fitness, and lifestyle coaching — designed around your goals, your routine, and your individual needs. No extreme dieting, no complicated rules.</p>
+    <div class="hero-ctas">
+      <a id="heroWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.43 9.9-9.9 0-2.64-1.03-5.12-2.9-6.99A9.82 9.82 0 0 0 12.04 2zm5.8 14.07c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.8-.11-.42-.14-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.26-.28.57-.36.76-.36h.55c.18 0 .41-.07.64.49.24.56.8 1.95.87 2.09.07.14.12.3.02.5-.1.2-.15.32-.3.49-.14.17-.3.38-.43.5-.14.14-.29.3-.12.59.17.28.75 1.24 1.62 2.01 1.11 1 2.05 1.3 2.34 1.45.28.14.45.12.62-.07.17-.2.73-.85.92-1.14.2-.28.4-.24.66-.14.28.1 1.76.83 2.06.98.3.14.5.21.57.33.07.12.07.68-.17 1.36z"/></svg>
+        Chat With Eti on WhatsApp
+      </a>
     </div>
-    <div class="hero-visual">
-      <img src="assets/coach-hero.jpg" alt="Eti Sarkar, Personalized Weight Loss and Wellness Coach at Eti's Energy Cafe" style="width:100%;height:100%;object-fit:cover;object-position:center 18%;">
+    <div class="trust-row">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Personalized plan</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> 1:1 with Eti</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> No extreme diets</span>
     </div>
   </div>
 </section>
 
-<!-- PROBLEM -->
+<!-- SOUND FAMILIAR -->
 <section class="section">
   <div class="container">
-    <span class="eyebrow"><span class="dot"></span> The Struggle Is Real</span>
-    <h2 class="h2" style="margin-top:10px;">Struggling to Lose Weight Despite Your Efforts?</h2>
-    <p class="lede" style="margin-top:12px;">Weight management can feel frustrating when you are trying different diets, changing your routine, or struggling to stay consistent.</p>
-    <div class="grid cards-4" style="margin-top:36px;">
-      <div class="card problem-card">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/></svg></div>
-        <h3 class="h3">Confused About What to Eat?</h3>
-        <p class="plan-desc" style="margin-top:8px;">Understand how to build practical eating habits that fit your lifestyle.</p>
-      </div>
-      <div class="card problem-card">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h3 class="h3">Struggling With Consistency?</h3>
-        <p class="plan-desc" style="margin-top:8px;">Get guidance and support to develop a routine you can maintain.</p>
-      </div>
-      <div class="card problem-card">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></div>
-        <h3 class="h3">Feeling Low on Energy?</h3>
-        <p class="plan-desc" style="margin-top:8px;">Explore healthier daily habits, balanced nutrition, and appropriate physical activity.</p>
-      </div>
-      <div class="card problem-card">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 12h16M4 6h10M4 18h7"/></svg></div>
-        <h3 class="h3">Tired of Complicated Diets?</h3>
-        <p class="plan-desc" style="margin-top:8px;">Focus on practical lifestyle improvements rather than extreme approaches.</p>
-      </div>
+    <div class="center">
+      <span class="eyebrow"><span class="dot"></span> Sound Familiar?</span>
+      <h2 class="h2" style="margin-top:10px;">Struggling to Lose Weight Despite Your Efforts?</h2>
+      <p class="lede" style="margin-top:10px;">Weight management can feel frustrating when you're trying different diets, changing your routine, or struggling to stay consistent.</p>
     </div>
-    <div style="margin-top:34px;">
-      <a id="problemWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary">Let's Find a Better Approach</a>
+    <div class="icon-rows">
+      <div class="icon-row">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/></svg></div>
+        <div><b>Confused about what to eat?</b><p>Understand how to build practical eating habits that fit your lifestyle.</p></div>
+      </div>
+      <div class="icon-row">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <div><b>Struggling with consistency?</b><p>Get guidance and support to develop a routine you can maintain.</p></div>
+      </div>
+      <div class="icon-row">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></div>
+        <div><b>Feeling low on energy?</b><p>Explore healthier daily habits, balanced nutrition, and the right activity.</p></div>
+      </div>
+      <div class="icon-row">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 12h16M4 6h10M4 18h7"/></svg></div>
+        <div><b>Tired of complicated diets?</b><p>Focus on practical lifestyle improvements instead of extreme approaches.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- INTRO + COACH -->
-<section class="section" id="about" style="background:var(--surface-2);">
-  <div class="container coach-wrap">
-    <div class="coach-card">
-      <div class="coach-avatar" style="overflow:hidden;">
-        <img src="assets/coach-portrait.jpg" alt="Eti Sarkar, Personalized Weight Loss and Wellness Coach" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;">
+<!-- CHECK YOURSELF -->
+<section class="section" style="background:var(--surface-2);">
+  <div class="container">
+    <div class="center">
+      <span class="eyebrow"><span class="dot"></span> Check Yourself</span>
+      <h2 class="h2" style="margin-top:10px;">Does Any of This Sound Like You?</h2>
+      <p class="lede" style="margin-top:10px;">If a few of these feel familiar, a more personalized approach could help.</p>
+    </div>
+    <div class="check-grid">
+      <div class="check-item"><span class="x">✕</span> Struggling to stay consistent with a diet</div>
+      <div class="check-item"><span class="x">✕</span> Frequent food cravings</div>
+      <div class="check-item"><span class="x">✕</span> Unhealthy eating habits</div>
+      <div class="check-item"><span class="x">✕</span> Low energy through the day</div>
+      <div class="check-item"><span class="x">✕</span> No time to exercise regularly</div>
+      <div class="check-item"><span class="x">✕</span> Confused by conflicting diet advice</div>
+      <div class="check-item"><span class="x">✕</span> No structured routine to follow</div>
+      <div class="check-item"><span class="x">✕</span> Wanting a more supportive environment</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY TRUST -->
+<section class="section">
+  <div class="container">
+    <div class="center">
+      <span class="eyebrow"><span class="dot"></span> Why Eti's Energy Cafe</span>
+      <h2 class="h2" style="margin-top:10px;">Personalized Guidance You Can Trust</h2>
+    </div>
+    <div class="trust-list">
+      <div class="item"><span class="check">✓</span><div><b>Personalized Nutrition Guidance</b><p>Based on your individual goals, preferences, and lifestyle.</p></div></div>
+      <div class="item"><span class="check">✓</span><div><b>No Extreme Diet Culture</b><p>Sustainable eating habits instead of unrealistic restrictions.</p></div></div>
+      <div class="item"><span class="check">✓</span><div><b>Fitness &amp; Exercise Support</b><p>Appropriate exercise activities and movement routines.</p></div></div>
+      <div class="item"><span class="check">✓</span><div><b>Regular Coaching Support</b><p>Stay connected with your coach and discuss your progress.</p></div></div>
+      <div class="item"><span class="check">✓</span><div><b>Women-Focused Support</b><p>A welcoming, supportive environment for your wellness goals.</p></div></div>
+      <div class="item"><span class="check">✓</span><div><b>Flexible &amp; Practical</b><p>Guidance built around your routine, not against it.</p></div></div>
+    </div>
+    <div class="highlight-strip">No Extreme Dieting. No Complicated Routines. Just Practical Guidance.</div>
+  </div>
+</section>
+
+<!-- WHO I AM -->
+<section class="section" style="background:var(--surface-2);">
+  <div class="container" style="max-width:640px;">
+    <span class="eyebrow"><span class="dot"></span> Who I Am</span>
+    <div class="coach-wrap" style="margin-top:16px;">
+      <div class="coach-photo"><img src="assets/coach-portrait.jpg" alt="Eti Sarkar, Weight Loss and Wellness Coach"></div>
+      <div class="coach-meta">
+        <b>Eti Sarkar</b>
+        <p class="role">Personalized Weight Loss &amp; Wellness Coach</p>
+        <p class="loc">Barrackpore Yoga and Nutrition Club</p>
       </div>
-      <h3>Eti Sarkar</h3>
-      <p class="role">Personalized Weight Loss &amp; Wellness Coach</p>
-      <p class="loc">Barrackpore Yoga and Nutrition Club</p>
-      <a id="coachWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-gold btn-sm" style="margin-top:20px;">Talk to Eti</a>
     </div>
-    <div>
-      <span class="eyebrow"><span class="dot"></span> Your Coach</span>
-      <h2 class="h2" style="margin-top:10px;">Your Personal Wellness Journey, Guided by Eti Sarkar</h2>
-      <p class="lede" style="margin-top:14px;">At Eti's Energy Cafe, the focus is on helping individuals develop healthier habits through personalized nutrition guidance, fitness activities, and lifestyle support.</p>
-      <p class="lede" style="margin-top:14px;">Every person's journey is different. Your goals, daily routine, food preferences, and lifestyle matter when creating a practical wellness approach. Our objective is to help you build a healthier relationship with food, improve consistency, and work toward your personal fitness goals.</p>
+    <p class="coach-bio">At Eti's Energy Cafe, the focus is on helping individuals develop healthier habits through personalized nutrition guidance, fitness activities, and lifestyle support. Every person's journey is different — your goals, routine, and food preferences all matter when building a practical wellness approach.</p>
+    <div class="pill-tags">
+      <span class="pill-tag">Personalized Nutrition</span>
+      <span class="pill-tag">Fitness &amp; Yoga Guidance</span>
+      <span class="pill-tag">Lifestyle Coaching</span>
     </div>
+    <a id="coachWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-gold btn-sm" style="margin-top:20px;">Talk to Eti</a>
   </div>
 </section>
 
 <!-- PROGRAMS -->
 <section class="section" id="programs">
   <div class="container">
-    <div style="text-align:center;max-width:620px;margin:0 auto;">
-      <span class="eyebrow"><span class="dot"></span> Weight Loss Programs</span>
+    <div class="center">
+      <span class="eyebrow"><span class="dot"></span> The Program</span>
       <h2 class="h2" style="margin-top:10px;">Choose Your Personalized Weight Loss Program</h2>
-      <p class="lede" style="margin:12px auto 0;">Find a wellness plan that fits your goals, lifestyle, and level of support.</p>
+      <p class="lede" style="margin-top:10px;">Find a wellness plan that fits your goals, lifestyle, and level of support.</p>
     </div>
-    <div class="grid cards-2" style="margin-top:40px;align-items:stretch;">
+    <div class="grid-2" style="margin-top:30px;align-items:stretch;">
       <div class="plan-card">
         <div>
           <span class="eyebrow">Option 1</span>
-          <h3 class="h3" style="margin-top:8px;">Basic Wellness Plan</h3>
-          <p class="plan-desc" style="margin-top:6px;">Designed for individuals looking for structured wellness guidance.</p>
+          <h3 style="margin-top:6px;font-size:18px;">Basic Wellness Plan</h3>
+          <p class="plan-desc" style="margin-top:5px;">Structured wellness guidance for everyday consistency.</p>
         </div>
         <ul class="plan-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Cardio and exercise guidance</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Strength training guidance</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Power Yoga activities</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Cardio, strength &amp; Power Yoga guidance</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Sunday special Zumba sessions</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Customized diet guidance</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Water and hydration guidance</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Calorie awareness</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Regular follow-up</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Customized diet &amp; hydration guidance</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Calorie awareness &amp; regular follow-up</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Flexible lifestyle support</li>
         </ul>
-        <p class="plan-desc">Build healthier daily habits with structured guidance and practical support.</p>
         <a id="basicWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:4px;">Explore Basic Plan</a>
       </div>
       <div class="plan-card featured">
         <span class="plan-badge">Most Personalized</span>
         <div>
           <span class="eyebrow">Option 2</span>
-          <h3 class="h3" style="margin-top:8px;">Complete Wellness Plan</h3>
-          <p class="plan-desc" style="margin-top:6px;">Designed for individuals looking for more personalized nutrition and coaching support.</p>
+          <h3 style="margin-top:6px;font-size:18px;">Complete Wellness Plan</h3>
+          <p class="plan-desc" style="margin-top:5px;">Deeper personalized nutrition and coaching support.</p>
         </div>
         <ul class="plan-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Cardio and exercise guidance</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Strength training guidance</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Power Yoga activities</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Sunday special Zumba sessions</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personalized daily diet guidance</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Breakfast planning</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Nutrition and hydration guidance</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Food and calorie tracking</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Everything in the Basic Plan</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Personalized daily diet &amp; breakfast planning</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Food &amp; calorie tracking</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Senior coach follow-up</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Lifestyle and consistency support</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Lifestyle &amp; consistency support</li>
         </ul>
-        <p class="plan-desc">Get additional guidance and support to work toward your personal wellness goals.</p>
         <a id="completeWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:4px;">Explore Complete Plan</a>
       </div>
     </div>
@@ -420,233 +343,117 @@ footer{background:var(--green-900);color:rgba(244,241,224,.82);}
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="section section-dark">
+<section class="section" style="background:var(--surface-2);">
   <div class="container">
-    <span class="eyebrow" style="color:var(--gold);"><span class="dot" style="background:var(--gold);"></span> The Process</span>
-    <h2 class="h2" style="margin-top:10px;">Your Journey to Better Health Starts Here</h2>
-    <div class="grid cards-4" style="margin-top:40px;">
-      <div class="step-card">
-        <div class="step-line"></div>
-        <div class="step-num">1</div>
-        <h3 class="h3" style="color:#fff;">Connect With Eti</h3>
-        <p class="lede" style="margin-top:8px;">Send a WhatsApp message and share your goals.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-line"></div>
-        <div class="step-num">2</div>
-        <h3 class="h3" style="color:#fff;">Discuss Your Lifestyle</h3>
-        <p class="lede" style="margin-top:8px;">Understand your routine, food preferences, activity level, and wellness needs.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-line"></div>
-        <div class="step-num">3</div>
-        <h3 class="h3" style="color:#fff;">Get Personalized Guidance</h3>
-        <p class="lede" style="margin-top:8px;">Explore an appropriate nutrition and lifestyle plan.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">4</div>
-        <h3 class="h3" style="color:#fff;">Build Healthy Habits</h3>
-        <p class="lede" style="margin-top:8px;">Continue working toward your goals with guidance, consistency, and follow-up.</p>
-      </div>
+    <div class="center">
+      <span class="eyebrow"><span class="dot"></span> How It Works</span>
+      <h2 class="h2" style="margin-top:10px;">Your Journey to Better Health Starts Here</h2>
     </div>
-    <div style="margin-top:38px;">
-      <a id="howWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-gold">Start With a WhatsApp Consultation</a>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><b>Connect With Eti</b><p>Send a WhatsApp message and share your goals.</p></div>
+      <div class="step"><div class="num">2</div><b>Discuss Your Lifestyle</b><p>Your routine, food preferences, and wellness needs.</p></div>
+      <div class="step"><div class="num">3</div><b>Get Personalized Guidance</b><p>Explore an appropriate nutrition and lifestyle plan.</p></div>
+      <div class="step"><div class="num">4</div><b>Build Healthy Habits</b><p>Keep going with guidance, consistency, and follow-up.</p></div>
     </div>
-  </div>
-</section>
-
-<!-- WHAT MAKES DIFFERENT -->
-<section class="section">
-  <div class="container">
-    <span class="eyebrow"><span class="dot"></span> Why Eti's Energy Cafe</span>
-    <h2 class="h2" style="margin-top:10px;">Personalized Guidance. Practical Habits. Supportive Coaching.</h2>
-    <div class="grid cards-3" style="margin-top:38px;">
-      <div class="card diff-card">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
-        <h3 class="h3">Personalized Nutrition Guidance</h3>
-        <p class="plan-desc" style="margin-top:8px;">Guidance based on individual goals, preferences, and lifestyle.</p>
-      </div>
-      <div class="card diff-card">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <h3 class="h3">No Extreme Diet Culture</h3>
-        <p class="plan-desc" style="margin-top:8px;">Encourage sustainable eating habits instead of unrealistic restrictions.</p>
-      </div>
-      <div class="card diff-card">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg></div>
-        <h3 class="h3">Fitness &amp; Exercise Support</h3>
-        <p class="plan-desc" style="margin-top:8px;">Explore appropriate exercise activities and movement routines.</p>
-      </div>
-      <div class="card diff-card">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 4v16h16"/><path d="M8 15l3-3 3 3 5-6"/></svg></div>
-        <h3 class="h3">Regular Coaching Support</h3>
-        <p class="plan-desc" style="margin-top:8px;">Stay connected with your coach and discuss your progress.</p>
-      </div>
-      <div class="card diff-card">
-        <div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
-        <h3 class="h3">Women-Focused Support</h3>
-        <p class="plan-desc" style="margin-top:8px;">A welcoming and supportive environment for women seeking wellness guidance.</p>
-      </div>
-      <div class="card diff-card" style="display:flex;flex-direction:column;justify-content:center;background:var(--lime-soft);border:none;">
-        <h3 class="h3">Ready when you are.</h3>
-        <p class="plan-desc" style="margin-top:8px;">Share your goals with Eti and find the plan that fits.</p>
-        <a id="diffWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="margin-top:14px;width:fit-content;">Get Personalized Guidance</a>
-      </div>
+    <div class="stat-row">
+      <span class="stat-pill">Healthier Eating Habits</span>
+      <span class="stat-pill">More Daily Energy</span>
+      <span class="stat-pill">Better Consistency</span>
+      <span class="stat-pill">Improved Well-Being</span>
+    </div>
+    <div style="text-align:center;margin-top:28px;">
+      <a id="howWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary">Start With a WhatsApp Chat</a>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="section" id="stories" style="background:var(--surface-2);">
-  <div class="container">
-    <span class="eyebrow"><span class="dot"></span> Client Experiences</span>
-    <h2 class="h2" style="margin-top:10px;">Real People. Real Experiences. Their Wellness Journey.</h2>
-    <p class="lede" style="margin-top:12px;">Real WhatsApp conversations between Eti and her clients — shown exactly as sent.</p>
-    <div class="marquee" style="margin-top:30px;">
-    <div class="marquee-track tn-rail" style="animation-duration:34s;">
-      <!-- set A -->
-      <div class="tn-card" style="border-style:solid;">
-        <img src="assets/testimonial-1.jpg" alt="WhatsApp message from Tamanna to Eti" style="width:100%;max-height:260px;object-fit:cover;object-position:top;border-radius:12px;margin-bottom:14px;">
-        <div class="tn-stars">★★★★★</div>
-        <h3 class="h3" style="font-size:16px;">Tamanna</h3>
-        <p class="tn-note" style="margin-top:6px;">"Nijeke mirror-e dekhlam, skin eto sundor glowing dicche, nijeke bison halka lagse — tau matro 5 din-e. I love you so much mam."</p>
-      </div>
-      <div class="tn-card" style="border-style:solid;">
-        <img src="assets/testimonial-2.jpg" alt="WhatsApp message from Swagata Poddar to Eti" style="width:100%;max-height:260px;object-fit:cover;object-position:top;border-radius:12px;margin-bottom:14px;">
-        <div class="tn-stars">★★★★★</div>
-        <h3 class="h3" style="font-size:16px;">Swagata Poddar</h3>
-        <p class="tn-note" style="margin-top:6px;">"O didi jano toh, amr nijeke khub halka lagche. Amr pet-ta onk ta kom lagche — kno jani na, ai dudine-i."</p>
-      </div>
-      <div class="tn-card" style="border-style:solid;">
-        <img src="assets/testimonial-3.jpg" alt="WhatsApp message from Pallabi Dey to Eti" style="width:100%;max-height:260px;object-fit:cover;object-position:top;border-radius:12px;margin-bottom:14px;">
-        <div class="tn-stars">★★★★★</div>
-        <h3 class="h3" style="font-size:16px;">Pallabi Dey</h3>
-        <p class="tn-note" style="margin-top:6px;">"5kg komeche. Amar energy level onek bereche, aage khub rege jetam, ekhon ektu kom. Period problem-o kichuta mitheche."</p>
-      </div>
-      <div class="tn-card" style="border-style:solid;">
-        <img src="assets/testimonial-4.jpg" alt="WhatsApp message from a client to Eti" style="width:100%;max-height:260px;object-fit:cover;object-position:top;border-radius:12px;margin-bottom:14px;">
-        <div class="tn-stars">★★★★★</div>
-        <h3 class="h3" style="font-size:16px;">A Grateful Client</h3>
-        <p class="tn-note" style="margin-top:6px;">"Thank you so much Mam. Ki sundor situation handle koren Mam — koto kichu shekhar ache apnar theke."</p>
-      </div>
-      <!-- set B (duplicate for seamless loop) -->
-      <div class="tn-card" style="border-style:solid;" aria-hidden="true">
-        <img src="assets/testimonial-1.jpg" alt="" style="width:100%;max-height:260px;object-fit:cover;object-position:top;border-radius:12px;margin-bottom:14px;">
-        <div class="tn-stars">★★★★★</div>
-        <h3 class="h3" style="font-size:16px;">Tamanna</h3>
-        <p class="tn-note" style="margin-top:6px;">"Nijeke mirror-e dekhlam, skin eto sundor glowing dicche, nijeke bison halka lagse — tau matro 5 din-e. I love you so much mam."</p>
-      </div>
-      <div class="tn-card" style="border-style:solid;" aria-hidden="true">
-        <img src="assets/testimonial-2.jpg" alt="" style="width:100%;max-height:260px;object-fit:cover;object-position:top;border-radius:12px;margin-bottom:14px;">
-        <div class="tn-stars">★★★★★</div>
-        <h3 class="h3" style="font-size:16px;">Swagata Poddar</h3>
-        <p class="tn-note" style="margin-top:6px;">"O didi jano toh, amr nijeke khub halka lagche. Amr pet-ta onk ta kom lagche — kno jani na, ai dudine-i."</p>
-      </div>
-      <div class="tn-card" style="border-style:solid;" aria-hidden="true">
-        <img src="assets/testimonial-3.jpg" alt="" style="width:100%;max-height:260px;object-fit:cover;object-position:top;border-radius:12px;margin-bottom:14px;">
-        <div class="tn-stars">★★★★★</div>
-        <h3 class="h3" style="font-size:16px;">Pallabi Dey</h3>
-        <p class="tn-note" style="margin-top:6px;">"5kg komeche. Amar energy level onek bereche, aage khub rege jetam, ekhon ektu kom. Period problem-o kichuta mitheche."</p>
-      </div>
-      <div class="tn-card" style="border-style:solid;" aria-hidden="true">
-        <img src="assets/testimonial-4.jpg" alt="" style="width:100%;max-height:260px;object-fit:cover;object-position:top;border-radius:12px;margin-bottom:14px;">
-        <div class="tn-stars">★★★★★</div>
-        <h3 class="h3" style="font-size:16px;">A Grateful Client</h3>
-        <p class="tn-note" style="margin-top:6px;">"Thank you so much Mam. Ki sundor situation handle koren Mam — koto kichu shekhar ache apnar theke."</p>
-      </div>
-    </div>
-    </div>
-    <p class="disclaimer">Individual experiences vary. Results depend on personal circumstances, consistency, and other factors. Shown with the client's permission, exactly as sent.</p>
-    <div style="margin-top:22px;">
-      <a id="storiesWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary">Start Your Own Journey</a>
-    </div>
-  </div>
-</section>
-
-<!-- REAL RESULTS -->
-<section class="section" style="background:var(--surface-2);">
-  <div class="container">
-    <span class="eyebrow"><span class="dot"></span> Real Transformations</span>
-    <h2 class="h2" style="margin-top:10px;">Consistency, Shown Over Time</h2>
-    <p class="lede" style="margin-top:12px;">Shared by Eti's Energy Cafe with client permission. Individual results vary depending on body type, consistency, and lifestyle.</p>
-    <div class="marquee" style="margin-top:28px;">
-    <div class="marquee-track tn-rail" style="animation-duration:52s;">
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;"><img src="assets/result-1.jpg" alt="Client transformation shared by Eti's Energy Cafe" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;"><img src="assets/result-2.jpg" alt="Client transformation shared by Eti's Energy Cafe" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;"><img src="assets/result-3.jpg" alt="Client transformation shared by Eti's Energy Cafe" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;"><img src="assets/result-4.jpg" alt="Client transformation shared by Eti's Energy Cafe" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;"><img src="assets/result-5.jpg" alt="Client transformation shared by Eti's Energy Cafe" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;"><img src="assets/result-6.jpg" alt="Client transformation shared by Eti's Energy Cafe" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;"><img src="assets/result-7.jpg" alt="Client transformation shared by Eti's Energy Cafe" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;"><img src="assets/result-8.jpg" alt="Client transformation shared by Eti's Energy Cafe" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;"><img src="assets/result-9.jpg" alt="Client transformation and achievement shared by Eti's Energy Cafe" style="width:100%;border-radius:14px;display:block;"></div>
-      <!-- duplicate set for seamless loop -->
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;" aria-hidden="true"><img src="assets/result-1.jpg" alt="" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;" aria-hidden="true"><img src="assets/result-2.jpg" alt="" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;" aria-hidden="true"><img src="assets/result-3.jpg" alt="" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;" aria-hidden="true"><img src="assets/result-4.jpg" alt="" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;" aria-hidden="true"><img src="assets/result-5.jpg" alt="" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;" aria-hidden="true"><img src="assets/result-6.jpg" alt="" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;" aria-hidden="true"><img src="assets/result-7.jpg" alt="" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;" aria-hidden="true"><img src="assets/result-8.jpg" alt="" style="width:100%;border-radius:14px;display:block;"></div>
-      <div class="tn-card" style="border-style:solid;padding:10px;width:240px;" aria-hidden="true"><img src="assets/result-9.jpg" alt="" style="width:100%;border-radius:14px;display:block;"></div>
-    </div>
-    </div>
-  </div>
-</section>
-
-<!-- BENEFITS -->
 <section class="section">
   <div class="container">
-    <span class="eyebrow"><span class="dot"></span> What Consistency Can Build</span>
-    <h2 class="h2" style="margin-top:10px;">Small Lifestyle Changes Can Make a Difference</h2>
-    <div class="grid cards-3" style="margin-top:32px;">
-      <div class="benefit-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/></svg><span>Improve Your Daily Nutrition</span></div>
-      <div class="benefit-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span>Build a Consistent Fitness Routine</span></div>
-      <div class="benefit-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Develop Better Eating Habits</span></div>
-      <div class="benefit-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16M10 4v16"/></svg><span>Improve Your Understanding of Portion Sizes</span></div>
-      <div class="benefit-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg><span>Support Your Daily Energy and Well-Being</span></div>
-      <div class="benefit-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg><span>Build a More Active Lifestyle</span></div>
+    <div class="center">
+      <span class="eyebrow"><span class="dot"></span> Proof It Works</span>
+      <h2 class="h2" style="margin-top:10px;">Real People. Real Experiences.</h2>
+      <p class="lede" style="margin-top:10px;">Real WhatsApp conversations between Eti and her clients, shared with permission.</p>
     </div>
+    <div class="tm-grid">
+      <div class="tm-card">
+        <div class="tm-stars">★★★★★</div>
+        <p class="tm-quote">"Nijeke mirror-e dekhlam, skin eto sundor glowing dicche, nijeke bison halka lagse — tau matro 5 din-e."</p>
+        <div class="tm-who"><div class="tm-avatar">T</div><div><b>Tamanna</b><span>Client</span></div></div>
+      </div>
+      <div class="tm-card">
+        <div class="tm-stars">★★★★★</div>
+        <p class="tm-quote">"O didi jano toh, amr nijeke khub halka lagche. Amr pet-ta onk ta kom lagche — ai dudine-i."</p>
+        <div class="tm-who"><div class="tm-avatar">S</div><div><b>Swagata Poddar</b><span>Client</span></div></div>
+      </div>
+      <div class="tm-card">
+        <div class="tm-stars">★★★★★</div>
+        <p class="tm-quote">"5kg komeche. Amar energy level onek bereche, aage khub rege jetam, ekhon ektu kom."</p>
+        <div class="tm-who"><div class="tm-avatar">P</div><div><b>Pallabi Dey</b><span>Client</span></div></div>
+      </div>
+      <div class="tm-card">
+        <div class="tm-stars">★★★★★</div>
+        <p class="tm-quote">"Ki sundor situation handle koren Mam — koto kichu shekhar ache apnar theke."</p>
+        <div class="tm-who"><div class="tm-avatar">C</div><div><b>A Grateful Client</b><span>Client</span></div></div>
+      </div>
+    </div>
+    <p style="font-size:12px;color:var(--ink-soft);text-align:center;margin-top:20px;">Individual experiences vary. Results depend on personal circumstances, consistency, and other factors.</p>
+  </div>
+</section>
+
+<!-- CONSULTATION -->
+<section class="section" style="background:var(--surface-2);">
+  <div class="container">
+    <div class="center">
+      <span class="eyebrow"><span class="dot"></span> The Chat</span>
+      <h2 class="h2" style="margin-top:10px;">What Happens When You Message Eti?</h2>
+      <p class="lede" style="margin-top:10px;">A relaxed, no-pressure conversation — not a sales pitch.</p>
+    </div>
+    <div class="consult-icons">
+      <div class="consult-icon"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12.04 2C6.58 2 2.14 6.44 2.14 11.9c0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.2c5.46 0 9.9-4.43 9.9-9.9S17.5 2 12.04 2z"/></svg></div><b>Free to Ask</b></div>
+      <div class="consult-icon"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><b>Quick Reply</b></div>
+      <div class="consult-icon"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><b>1:1 With Eti</b></div>
+    </div>
+    <ul class="consult-list">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Your current routine and goals</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Your food preferences and lifestyle</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Which program fits you best</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>A clear next step — no pressure</li>
+    </ul>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="section" id="faq" style="background:var(--surface-2);">
-  <div class="container" style="max-width:820px;">
-    <span class="eyebrow"><span class="dot"></span> Questions</span>
-    <h2 class="h2" style="margin-top:10px;">Frequently Asked Questions</h2>
-    <div style="margin-top:20px;">
+<section class="section">
+  <div class="container" style="max-width:680px;">
+    <div class="center">
+      <span class="eyebrow"><span class="dot"></span> Questions</span>
+      <h2 class="h2" style="margin-top:10px;">Frequently Asked Questions</h2>
+    </div>
+    <div style="margin-top:18px;">
       <details class="faq-item" open>
         <summary class="faq-q">Do I need to follow an extreme diet?<span class="plus">+</span></summary>
-        <div class="faq-a">The program focuses on personalized nutrition guidance and practical lifestyle habits. Your coach can discuss an approach appropriate to your individual needs.</div>
+        <div class="faq-a">The program focuses on personalized nutrition guidance and practical lifestyle habits — Eti can discuss an approach appropriate to your individual needs.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Can beginners join the program?<span class="plus">+</span></summary>
-        <div class="faq-a">Yes. You can discuss your current activity level, experience, and goals with the coach to understand which activities may be suitable for you.</div>
+        <div class="faq-a">Yes. Share your current activity level, experience, and goals to understand which activities may suit you.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Do I need to join a gym?<span class="plus">+</span></summary>
-        <div class="faq-a">The available activities and exercise guidance can be discussed with the coach based on your preferences and individual circumstances.</div>
+        <div class="faq-a">Available activities can be discussed based on your preferences and circumstances — no gym required.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">How do I choose between the Basic and Complete plans?<span class="plus">+</span></summary>
-        <div class="faq-a">Contact Eti on WhatsApp to discuss your goals, lifestyle, and the support available under each program.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">How can I get started?<span class="plus">+</span></summary>
-        <div class="faq-a">Simply send a WhatsApp message to 7278366751 and share your weight-management or wellness goals.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Will I get a personalized diet plan?<span class="plus">+</span></summary>
-        <div class="faq-a">The program offers customized nutrition guidance. The coach can explain the available guidance and how it fits your individual needs.</div>
+        <summary class="faq-q">How do I choose between Basic and Complete?<span class="plus">+</span></summary>
+        <div class="faq-a">Message Eti on WhatsApp to discuss your goals, lifestyle, and the support available under each program.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">How much weight can I lose?<span class="plus">+</span></summary>
-        <div class="faq-a">Weight-loss results vary from person to person. Your progress depends on individual circumstances, health, nutrition, activity, and consistency. The coach can discuss realistic goals without promising a specific result.</div>
+        <div class="faq-a">Results vary from person to person, depending on health, nutrition, activity, and consistency. Eti can discuss realistic goals without promising a specific result.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Can I discuss my health concerns before joining?<span class="plus">+</span></summary>
-        <div class="faq-a">Yes. Share your concerns with the coach before beginning. If you have a medical condition, take medication, or need medical nutrition therapy, consult an appropriately qualified healthcare professional.</div>
+        <summary class="faq-q">Can I discuss health concerns before joining?<span class="plus">+</span></summary>
+        <div class="faq-a">Yes. If you have a medical condition or take medication, also consult an appropriately qualified healthcare professional.</div>
       </details>
     </div>
   </div>
@@ -656,15 +463,14 @@ footer{background:var(--green-900);color:rgba(244,241,224,.82);}
 <section class="section">
   <div class="container">
     <div class="final-cta">
-      <h2 class="h2">Ready to Start Your Wellness Journey?</h2>
-      <p class="lede">Take the first step toward healthier habits with personalized guidance and supportive coaching. Whether your goal is weight management, improved nutrition, or a more active lifestyle, Eti's Energy Cafe is here to help you explore your next step.</p>
-      <div style="margin-top:28px;display:flex;flex-direction:column;align-items:center;gap:12px;">
+      <h2>Ready to Start Your Wellness Journey?</h2>
+      <p class="lede">Take the first step toward healthier habits with personalized guidance and supportive coaching.</p>
+      <div style="margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:10px;">
         <a id="finalWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-gold">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.43 9.9-9.9 0-2.64-1.03-5.12-2.9-6.99A9.82 9.82 0 0 0 12.04 2zm5.8 14.07c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.8-.11-.42-.14-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.26-.28.57-.36.76-.36h.55c.18 0 .41-.07.64.49.24.56.8 1.95.87 2.09.07.14.12.3.02.5-.1.2-.15.32-.3.49-.14.17-.3.38-.43.5-.14.14-.29.3-.12.59.17.28.75 1.24 1.62 2.01 1.11 1 2.05 1.3 2.34 1.45.28.14.45.12.62-.07.17-.2.73-.85.92-1.14.2-.28.4-.24.66-.14.28.1 1.76.83 2.06.98.3.14.5.21.57.33.07.12.07.68-.17 1.36z"/></svg>
           Chat With Eti on WhatsApp
         </a>
         <span class="wa-number">7278366751</span>
-        <p style="font-size:13.5px;color:rgba(244,241,224,.75);">Let's discuss your goals and find the right starting point.</p>
       </div>
     </div>
   </div>
@@ -672,35 +478,18 @@ footer{background:var(--green-900);color:rgba(244,241,224,.82);}
 </main>
 
 <footer>
-  <div class="container" style="padding-block:38px 0;text-align:center;">
-    <div class="brand" style="color:#fff;justify-content:center;">
-      <span class="mark" style="background:var(--gold);color:var(--green-900);">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4.4-2-8-5.7-8-10.2C4 6.8 7.2 4 11 4c.5 2.7 2.6 4.5 5 5.3C17.7 10 18 12 17 14c-1.3 2.6-3.4 4.2-5 7z"/></svg>
-      </span>
-      Eti's Energy Cafe
-    </div>
-    <p style="margin-top:14px;font-size:14px;">Personalized Weight Loss &amp; Wellness Coaching · Barrackpore, West Bengal</p>
-    <p style="margin-top:10px;font-size:14px;">WhatsApp <span class="wa-number">7278366751</span> · Instagram @health.eti.coach</p>
-  </div>
-  <div class="container">
-    <p class="foot-disclaimer" style="text-align:center;">The information provided on this page is for general wellness and educational purposes. Individual results vary. Weight management and nutrition needs differ from person to person. This program does not replace medical advice, diagnosis, or treatment. © Eti's Energy Cafe.</p>
-    <p class="foot-disclaimer" style="text-align:center;border-top:none;padding-top:0;">Developed &amp; managed by <a href="#" target="_blank" rel="noopener" style="color:var(--gold);font-weight:700;">Adylize Private Limited</a></p>
-  </div>
+  Eti's Energy Cafe · Personalized Weight Loss &amp; Wellness Coaching · Barrackpore, West Bengal<br>
+  Developed, maintained &amp; designed by <a href="#" target="_blank" rel="noopener">Adylize Private Limited</a>
 </footer>
 
-<!-- Sticky mobile WhatsApp bar -->
 <div class="wa-sticky">
-  <div class="info">
-    <b>Chat with Eti</b>
-    <span>7278366751 · Free to ask</span>
-  </div>
+  <div class="info"><b>Chat with Eti</b><span>7278366751 · Free to ask</span></div>
   <a id="stickyWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
-    <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.43 9.9-9.9 0-2.64-1.03-5.12-2.9-6.99A9.82 9.82 0 0 0 12.04 2zm5.8 14.07c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.8-.11-.42-.14-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.26-.28.57-.36.76-.36h.55c.18 0 .41-.07.64.49.24.56.8 1.95.87 2.09.07.14.12.3.02.5-.1.2-.15.32-.3.49-.14.17-.3.38-.43.5-.14.14-.29.3-.12.59.17.28.75 1.24 1.62 2.01 1.11 1 2.05 1.3 2.34 1.45.28.14.45.12.62-.07.17-.2.73-.85.92-1.14.2-.28.4-.24.66-.14.28.1 1.76.83 2.06.98.3.14.5.21.57.33.07.12.07.68-.17 1.36z"/></svg>
+    <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.43 9.9-9.9 0-2.64-1.03-5.12-2.9-6.99A9.82 9.82 0 0 0 12.04 2zm5.8 14.07c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.8-.11-.42-.14-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.26-.28.57-.36.76-.36h.55c.18 0 .41-.07.64.49.24.56.8 1.95.87 2.09.07.14.12.3.02.5-.1.2-.15.32-.3.49-.14.17-.3.38-.43.5-.14.14-.29.3-.12.59.17.28.75 1.24 1.62 2.01 1.11 1 2.05 1.3 2.34 1.45.28.14.45.12.62-.07.17-.2.73-.85.92-1.14.2-.28.4-.24.66-.14.28.1 1.76.83 2.06.98.3.14.5.21.57.33.07.12.07.68-.17 1.36z"/></svg>
     Chat Now
   </a>
 </div>
 
-<!-- Floating WhatsApp (desktop + tucked above sticky bar on mobile) -->
 <a id="floatWaBtn" class="wa-float" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.43 9.9-9.9 0-2.64-1.03-5.12-2.9-6.99A9.82 9.82 0 0 0 12.04 2zm5.8 14.07c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.12.11-1.8-.11-.42-.14-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.26-.28.57-.36.76-.36h.55c.18 0 .41-.07.64.49.24.56.8 1.95.87 2.09.07.14.12.3.02.5-.1.2-.15.32-.3.49-.14.17-.3.38-.43.5-.14.14-.29.3-.12.59.17.28.75 1.24 1.62 2.01 1.11 1 2.05 1.3 2.34 1.45.28.14.45.12.62-.07.17-.2.73-.85.92-1.14.2-.28.4-.24.66-.14.28.1 1.76.83 2.06.98.3.14.5.21.57.33.07.12.07.68-.17 1.36z"/></svg>
 </a>
@@ -710,7 +499,7 @@ footer{background:var(--green-900);color:rgba(244,241,224,.82);}
   var phone = "917278366751";
   var msg = "Hello Eti, I am interested in your personalized weight loss program. I would like to know more about the Basic and Complete plans.";
   var link = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
-  var ids = ["heroWaBtn","problemWaBtn","coachWaBtn","basicWaBtn","completeWaBtn","howWaBtn","diffWaBtn","storiesWaBtn","finalWaBtn","stickyWaBtn","floatWaBtn"];
+  var ids = ["heroWaBtn","coachWaBtn","basicWaBtn","completeWaBtn","howWaBtn","finalWaBtn","stickyWaBtn","floatWaBtn"];
   ids.forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.setAttribute("href", link);
